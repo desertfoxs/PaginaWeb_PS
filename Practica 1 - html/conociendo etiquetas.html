@@ -1,13 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conociendo etiquetas</title>
 </head>
 <body>
-    <h1>Hola mundo!</h1>
-    <h1>Hola mundo!</h1>
-    <h1>Hola mundo!</h1>
+    <h1>Etiquetas en html 4</h1> <!-- Este es el header mas grande, suele usarse para titulos-->
+    <h3>Ejercicio 1. Esta es una tabla:</h3> <!-- Este header mas chico que el anterior, suele usarse para subtitulos-->
+    <table> 
+        <tr> <!--table row -->
+            <th>Etiqueta</th> <!--table headline -->
+            <th>Descripcion</th>
+        </tr>
+        <tr>
+            <td>Head</td> <!--table data -->
+            <td>La cabecera es una colección de información acerca del documento.</td>
+        </tr>
+        <tr>
+            <td>Base</td>
+            <td>Proporciona una dirección de base para interpretar los enlaces relativos
+                cuando el documento se lee fuera de su contexto (por ejemplo cuando está
+                guardado en un disco).</td>
+        </tr>
+        <tr>
+            <td>Meta</td>
+            <td>Proporcionar información sobre el documento que no pueda ser expresada
+                en los campos anteriores. La información se escribe usando pares
+                nombre/valor que pueden ser empleados para dos propósitos:</td>
+        </tr>
+        <tr>
+            <td>Meta 1er proposito</td>
+            <td>
+                Proporcionar datos al servidor de HTTP para que genere campos de cabecera (como por ejemplo la fecha de caducidad de un documento que se actualiza periódicamente).
+                Ejemplo: &lt;META HTTP-EQUIV ="Expires" CONTENT="Dec 1996"&gt;
+            </td>
+        </tr>
+        <tr>
+            <td>Meta 2do proposito</td>
+            <td>
+                Para que un usuario incluya información adicional sobre el documento, como palabras clave o el nombre del autor. 
+                Ejemplo: &lt;META NAME="Autor" CONTENT="TU NOMBRE"&gt;
+            </td>
+        </tr>
+        <tr>
+            <td>BLOCKQUOTE</td>
+            <td>Indica que un texto es una cita de otra fuente.</td>
+        </tr>
+        <tr>
+            <td>BR</td>
+            <td>Indica un salto de linea</td>
+        </tr>
+        <tr>
+            <td>no hay???</td>
+            <td>
+                Para separar párrafos. Dado que para el HTML todo el texto es continuo,
+                necesitamos algún mecanismo para indicar el principio y fin de un párrafo.
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Center</td>
+            <td>Se utiliza para centrar todo el texto de un párrafo.</td>
+        </tr>
+        <tr>
+            <td>&lt;p align=”left”&gt;</td>
+            <td>Define un párrafo Justificado a Izquierda.</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>a</td>
+        </tr>
+    </table>
+
+    <p>Este es un párrafo</p> <!-- Este es el elemento que muestra un párrafo de texto-->
+    
+    <h3>Ejercicio 2</h3>
+    <p>Se puede hacer ese formato de tabla sin css?</p>
+
+    <h3>Ejercicio 3. Contruir un formulario</h3>
+    <div>
+        <form action="/submit_form" method="post">
+            <label>Nombre completo:</label><br>
+            <input type="text"><br>
+            
+            <label>Mail:</label><br>
+            <input type="email"><br>
+            
+            <label>Fecha de nacimiento:</label><br>
+            <input type="date"><br>
+
+            <label>Descripcion:</label><br>
+            <textarea></textarea><br>
+
+            <label>Sexo:</label><br>
+            <input name="intereses" type="radio" value=""/> hombre     <!-- Parece que se agrupan por name, o sea, si uno se selecciona, el otro se deselecciona-->
+            <input name="intereses" type="radio" value=""/> mujer
+            <br/>
+
+            <label>Indique su profesion:</label><br>
+            <input name="profesionMedico" type="checkbox" />Medico
+            <input name="profesionProgramador" type="checkbox" />Programador
+            <input name="profesionIngeniero" type="checkbox" />Ingeniero
+            <br>
+
+            <label>Provincia</label>
+            <select name="" id="">
+                <option value="">Rio negro</option>
+                <option value="">Chubut</option>
+                <option value="">Cordoba</option>
+            </select>
+            <br>
+
+            <input type="submit" value="Submit">
+
+        </form>  <!-- Este es el formulario que permite enviar datos a un script en otro sitio-->
+    </div>
 </body>
 </html>
