@@ -1,0 +1,425 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ecdfdf;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333333e8;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    /* Reducido de 1rem a 10px */
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    /* Reduce ligeramente el tamaño de la fuente */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #726969;
+}
+
+
+/* seccion de los trabajos */
+.trabajos-container {
+    display: flex;
+    min-height: calc(100vh - 80px);
+    /* Ajusta según el tamaño de tu header y footer */
+    overflow: hidden;
+}
+
+.trabajos-sidebar {
+    width: 20%;
+    background-color: #332d2d;
+    color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.trabajo-item {
+    margin-bottom: 450px;
+}
+
+.trabajo-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.trabajo-item p {
+    font-size: 0.9em;
+}
+
+.trabajos-galeria {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+    
+}
+
+.galeria-item {
+    overflow: hidden;
+    margin-bottom: 30px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img{
+    transform: scale(1.05);
+}
+
+.galeria-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+/* css para la seccion del contacto */
+
+.container {
+    background: #332d2d6b;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.titulo-formulario {
+    color: #dddddd;
+    font-size: 24px;
+}
+
+.titulo-sedes {
+    color: #dddddd;
+    font-size: 22px;
+}
+
+.titulo-redes {
+    color: #dddddd;
+    font-size: 20px;
+}
+
+.form-container,
+.locations {
+    background: #332d2d;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    color: #dddddd;
+    font-size: 115%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 98%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+.location-card {
+    background: #f9f9f9;
+    border: 1px solid #726969;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.location-card:hover{
+    transform: scale(1.02);
+}
+
+
+.social-icons {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #003366;
+    font-size: 24px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* css para el EQUIPO */
+
+
+.team-section {
+    background-color: #332d2d6b;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+h1 {
+    color: #333;
+}
+
+.carousel-container {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.team-member {
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.tituloEquipo{
+    color: #dddddd;
+    text-align: center;
+    background-color: #332d2d;
+    
+}
+
+.titulocarousel{
+    color: #dddddd;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member:not(.active) {
+    filter: blur(4px);
+    transform: scale(0.8);
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.member-info h2 {
+    margin: 10px 0 5px;
+    color: #fcf3f3;
+}
+
+.member-info p {
+    margin: 0;
+    color: #fcf3f3;
+}
+
+.descripccionEquipo {
+    color: #dddddd;
+    font-size: 120%;
+}
+
+
+/* css para el SERVICIO */
+
+.servicios{
+    text-align: center;
+    color: #dddddd;
+    background-color: #332d2d;
+}
+
+.tipos_servicios{
+    color: #dddddd;
+    background-color: #332d2d6b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+.sevicio_item{
+    color: #dddddd;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sevicio_item p{
+    color: #dddddd;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+
+
+/* css para el home */
+
+.descripcionHome{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeItem{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #332d2d6b;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3%;
+}
+
+.letraHome{
+    text-align: center;
+    line-height: center;
+    color: #dddddd;
+}
+
+.descripcionHome{
+    text-align: center;
+    line-height: center;
+    color: #dddddd;
+}
+
+.imageFondo{
+    width: 95%;
+    height: 99%;
+    border-radius: 3%;
+}
+
+.trabajo-section{
+    background-color: #332d2d6b;
+    text-align: center;
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+/* fondo */
+
